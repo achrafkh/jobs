@@ -12,7 +12,7 @@
 		<div class="basic-informations">
 			<div class="form-cap">
 				<h2>Informations basic</h2>
-				<!-- <p>Lorem ipsum dolor sit amet consectetur</p> -->
+				<p>Parler-nous de vous</p>
 			</div>
 			<div class="row nm-10">
 				<div class="col-md-6 col-sm-6 p-h-10">
@@ -48,7 +48,7 @@
 		<div class="additional-informations">
 			<div class="form-cap">
 				<h2>Informations additionnelle</h2>
-				<!-- <p>Lorem ipsum dolor sit amet consectetur</p> -->
+				<p>Parler-nous de vos compétances</p>
 			</div>
 			<div class="row">
 				<!-- <div class="col-md-12">

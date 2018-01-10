@@ -1,0 +1,54 @@
+/*
+-----------------------------------------
+Colors
+-----------------------------------------
+*/
+
+$black: 		#000;
+$white: 		#fff;
+
+$grey:			#ababab;
+$dk_grey: 		#626262;
+$bg_grey: 		#f5f7fa;
+$line_grey: 	#d5d5d5;
+
+$green: 		#4fd0a9;
+$lt_green: 		#50dcb2;
+$orange: 		#f96f41;
+$lt_orange: 	#ff7f54;
+$red:			#f6695e;
+$blue:			#4b85e6;
+$lt_blue:		#5791f3;
+$cyon:			#59c0ed;
+$lt_cyon:		#63c8f5;
+$yellow:		#ffd202;
+
+/*
+-----------------------------------------
+Fonts
+-----------------------------------------
+*/
+
+$font_default:		'arial';
+
+$light:				'roboto-light';
+$regular:			'roboto-regular';
+$medium:			'roboto-medium';
+$bold:				'roboto-bold';
+
+$mont-regular:		'montserrat-regular';
+$mont-medium:		'montserrat-medium';
+$mont-semi:			'montserrat-semibold';
+$mont-bold:			'montserrat-bold';
+
+/*
+-----------------------------------------
+Media
+-----------------------------------------
+*/
+
+$bigscreen_width: 			1557px;
+$desktop_width: 			1366px;
+$tablet_width: 				991px;
+$phone_landscape_width: 	768px;
+$phone_portrait_width: 		600px;

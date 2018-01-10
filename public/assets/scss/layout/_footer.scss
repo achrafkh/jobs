@@ -1,0 +1,53 @@
+/*
+-----------------------------------------
+Footer
+-----------------------------------------
+*/
+
+.footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: $blue;
+	width: 100%;
+	padding: 5px 0;
+	@include respond-to(ms){
+		padding: 20px 0 10px;
+		text-align: center;
+	}
+	.copywrite{
+		float: left;
+		font-family: $medium;
+		font-size: 11px;
+		color: $white;
+		margin: 13px 0;
+		@include respond-to(ms){float: none}
+	}
+	.footer-social{
+		float: right;
+		@include respond-to(ms){float: none;}
+		li{
+			display: inline-block;
+			a{
+				color: rgba($black, 0.3);
+				display: block;
+				padding: 10px;
+				text-decoration: none;
+				transition: all 0.2s ease-in-out;
+				i{
+					&:before{
+						font-size: 18px;
+					}
+					&.icon-facebook{
+						&:before{
+							font-size: 16px;
+						}
+					}
+				}
+				&:hover{
+					color: $white;
+				}
+			}
+		}
+	}
+}

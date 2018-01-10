@@ -1,0 +1,282 @@
+/*
+-----------------------------------------
+Application
+-----------------------------------------
+*/
+
+.application-header{
+	padding: 70px 15px 50px;
+	background-color: $blue;
+	text-align: center;
+	@include respond-to(ms){padding: 65px 15px 45px;}
+	img{
+		width: 200px;
+		@include respond-to(ms){width: 165px;}
+	}
+	h1{
+		font-family: $light;
+		font-size: 38px;
+		color: $white;
+		margin: 5px 0;
+		@include respond-to(ms){font-size: 28px;}
+	}
+	p{
+		font-size: 18px;
+		color: rgba($black, 0.3);
+		margin: 0;
+		@include respond-to(ms){font-size: 14px;}
+	}
+}
+
+.application-form{
+	max-width: 600px;
+	padding: 30px 15px;
+	margin: auto;
+	@include respond-to(ms){padding: 0 15px 30px;}
+}
+
+.form-cap{
+	margin: 30px 0;
+	h2{
+		font-size: 20px;
+		color: $dk_grey;
+		margin: 0 0 5px;
+	}
+	p{
+		font-family: $light;
+		color: $grey;
+		margin: 0;
+	}
+}
+
+.job-post{
+	.form-cap{
+		text-align: center;
+	}
+	.job-specs{
+		.well{
+			background-color: transparent;
+			color: $grey;
+			padding: 10px 0 20px;
+			margin: 0;
+			border-radius: 0;
+			border: 0;
+			box-shadow: none;
+		}
+	}
+}
+
+.additional-informations{
+	.files, .sites{
+		margin-bottom: 20px;
+		h3{
+			font-family: $medium;
+			font-size: 14px;
+			color: $grey;
+			margin: 0 0 5px;
+		}
+		.input-wrap, .file-upload{
+			margin-bottom: 10px;
+		}
+		.add-btn-wrap{
+			.add-btn{
+				background-color: $blue;
+				color: $white;
+				span, i{
+					display: inline-block;
+					vertical-align: middle;
+				}
+				span{
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+}
+
+.application-sub-wrap{
+	margin: 40px 0 20px;
+	text-align: center;
+	@include respond-to(ms){margin: 30px 0 20px;}
+	.application-sub{
+		background-color: $blue;
+		font-family: $mont-semi;
+		color: $white;
+		padding: 15px 50px;
+		border-radius: 3px;
+	}
+}
+
+/*
+-----------------------------------------
+Colors
+-----------------------------------------
+*/
+
+.application-page.green-page{
+	.header{
+		background-color: $green;
+		.login-btn{
+			background-color: $lt_green;
+		}
+		.menu{
+			.dropdown{
+				.dropdown-menu{
+					li{
+						a, button{
+							color: $green;
+							&:hover{
+								background-color: $green;
+								color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer{
+		background-color: $green;
+	}
+	.application-inner{
+		.application-header{
+			background-color: $green;
+		}
+		.job-post{
+			.radiobox{
+				input[type="radio"]{
+					&:checked ~ label{
+						background-color: $green;
+						border: 1px solid $green;
+					}
+				}
+			}
+		}
+		.additional-informations{
+			.files, .sites{
+				.add-btn-wrap{
+					.add-btn{
+						background-color: $green;
+					}
+				}
+			}
+		}
+		.application-sub-wrap{
+			.application-sub{
+				background-color: $green;
+			}
+		}
+	}
+}
+
+.application-page.orange-page{
+	.header{
+		background-color: $orange;
+		.login-btn{
+			background-color: $lt_orange;
+		}
+		.menu{
+			.dropdown{
+				.dropdown-menu{
+					li{
+						a, button{
+							color: $orange;
+							&:hover{
+								background-color: $orange;
+								color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer{
+		background-color: $orange;
+	}
+	.application-inner{
+		.application-header{
+			background-color: $orange;
+		}
+		.job-post{
+			.radiobox{
+				input[type="radio"]{
+					&:checked ~ label{
+						background-color: $orange;
+						border: 1px solid $orange;
+					}
+				}
+			}
+		}
+		.additional-informations{
+			.files, .sites{
+				.add-btn-wrap{
+					.add-btn{
+						background-color: $orange;
+					}
+				}
+			}
+		}
+		.application-sub-wrap{
+			.application-sub{
+				background-color: $orange;
+			}
+		}
+	}
+}
+
+.application-page.cyon-page{
+	.header{
+		background-color: $cyon;
+		.login-btn{
+			background-color: $lt_cyon;
+		}
+		.menu{
+			.dropdown{
+				.dropdown-menu{
+					li{
+						a, button{
+							color: $cyon;
+							&:hover{
+								background-color: $cyon;
+								color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer{
+		background-color: $cyon;
+	}
+	.application-inner{
+		.application-header{
+			background-color: $cyon;
+		}
+		.job-post{
+			.radiobox{
+				input[type="radio"]{
+					&:checked ~ label{
+						background-color: $cyon;
+						border: 1px solid $cyon;
+					}
+				}
+			}
+		}
+		.additional-informations{
+			.files, .sites{
+				.add-btn-wrap{
+					.add-btn{
+						background-color: $cyon;
+					}
+				}
+			}
+		}
+		.application-sub-wrap{
+			.application-sub{
+				background-color: $cyon;
+			}
+		}
+	}
+}

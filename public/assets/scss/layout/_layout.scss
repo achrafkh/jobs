@@ -1,0 +1,24 @@
+/*
+-----------------------------------------
+Layout
+-----------------------------------------
+*/
+
+.page-wrap{
+	position: relative;
+	padding: 85px 0 49px;
+	overflow: hidden;
+	@include respond-to(sm){padding: 62px 0 49px;}
+	@include respond-to(ms){padding: 62px 0 108px;}
+	&.landing-page{
+		background-color: $bg_grey;
+		display: flex;
+		align-items: center;
+		min-height: 100vh;
+		.landing-inner{
+			width: 100%;
+			padding: 50px 0;
+			text-align: center;
+		}
+	}
+}

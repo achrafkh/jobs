@@ -1,0 +1,85 @@
+/*
+-----------------------------------------
+Fonts
+-----------------------------------------
+*/
+
+$fonts_path: '../fonts';
+
+/*
+-----------------------------------------
+Roboto
+-----------------------------------------
+*/
+
+@font-face {
+    font-family: 'roboto-light';
+    src: url('#{$fonts_path}/roboto/roboto-light.woff2') format('woff2'),
+         url('#{$fonts_path}/roboto/roboto-light.woff') format('woff'),
+         url('#{$fonts_path}/roboto/roboto-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('#{$fonts_path}/roboto/roboto-regular.woff2') format('woff2'),
+         url('#{$fonts_path}/roboto/roboto-regular.woff') format('woff'),
+         url('#{$fonts_path}/roboto/roboto-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto-medium';
+    src: url('#{$fonts_path}/roboto/roboto-medium.woff2') format('woff2'),
+         url('#{$fonts_path}/roboto/roboto-medium.woff') format('woff'),
+         url('#{$fonts_path}/roboto/roboto-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('#{$fonts_path}/roboto/roboto-bold.woff2') format('woff2'),
+         url('#{$fonts_path}/roboto/roboto-bold.woff') format('woff'),
+         url('#{$fonts_path}/roboto/roboto-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+-----------------------------------------
+Montserrat
+-----------------------------------------
+*/
+
+@font-face {
+    font-family: 'montserrat-regular';
+    src: url('#{$fonts_path}/montserrat/montserrat-regular.woff2') format('woff2'),
+         url('#{$fonts_path}/montserrat/montserrat-regular.woff') format('woff'),
+         url('#{$fonts_path}/montserrat/montserrat-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat-medium';
+    src: url('#{$fonts_path}/montserrat/montserrat-medium.woff2') format('woff2'),
+         url('#{$fonts_path}/montserrat/montserrat-medium.woff') format('woff'),
+         url('#{$fonts_path}/montserrat/montserrat-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat-semibold';
+    src: url('#{$fonts_path}/montserrat/montserrat-semibold.woff2') format('woff2'),
+         url('#{$fonts_path}/montserrat/montserrat-semibold.woff') format('woff'),
+         url('#{$fonts_path}/montserrat/montserrat-semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('#{$fonts_path}/montserrat/montserrat-bold.woff2') format('woff2'),
+         url('#{$fonts_path}/montserrat/montserrat-bold.woff') format('woff'),
+         url('#{$fonts_path}/montserrat/montserrat-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

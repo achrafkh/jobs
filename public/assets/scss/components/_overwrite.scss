@@ -1,0 +1,30 @@
+/*
+-----------------------------------------
+Overwrite
+-----------------------------------------
+*/
+
+* {
+	font-family: $regular, $font_default;
+    line-height: normal;
+    margin: 0;
+	padding: 0;
+	border: none;
+	outline: none !important;
+}
+p{
+	color: $grey;
+}
+b, strong{
+	font-family: $bold;
+	font-weight: normal;
+}
+ol, ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+h1, h2, h3, h4, h5, h6{
+	font-size:inherit;
+	margin:0;
+}

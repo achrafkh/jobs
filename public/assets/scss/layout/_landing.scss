@@ -1,0 +1,67 @@
+/*
+-----------------------------------------
+Landing
+-----------------------------------------
+*/
+
+.landing-header{
+	margin-bottom: 50px;
+	@include respond-to(ms){margin-bottom: 35px}
+	h1{
+		font-family: $light;
+		font-size: 38px;
+		color: $dk_grey;
+		@include respond-to(ms){font-size: 28px}
+	}
+	p{
+		font-family: $light;
+		font-size: 18px;
+		color: $grey;
+		margin: 5px 0;
+		@include respond-to(ms){font-size: 14px}
+	}
+}
+
+.category-slider{
+	max-width: 840px;
+	margin: auto;
+	.slick-list{
+		overflow: visible;
+	}
+	.category-slide{
+		padding: 0 20px;
+		@include respond-to(ms){padding: 0 10px}
+		&.slick-center{
+			.category-box{
+				box-shadow: 0 15px 40px 0 rgba($black, 0.15);
+			}
+		}
+	}
+	.category-box{
+		background-color: $white;
+		width: 240px;
+		padding: 30px;
+		border-radius: 10px;
+		transition: all 0.2s ease-in-out;
+		.cb-img{
+			padding: 0 15px;
+			margin-bottom: 40px;
+		}
+		.cb-title{
+			font-family: $bold;
+			font-size: 24px;
+			color: $dk_grey;
+		}
+		.cb-cap{
+			font-size: 12px;
+			margin: 5px 0 15px;
+		}
+		.cb-btn{
+			padding: 10px;
+			width: 100%;
+		}
+		&:hover{
+			box-shadow: 0 15px 40px 0 rgba($black, 0.15);
+		}
+	}
+}

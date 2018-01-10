@@ -1,0 +1,161 @@
+/*
+-----------------------------------------
+Header
+-----------------------------------------
+*/
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $blue;
+	width: 100%;
+	padding: 20px 0;
+    box-shadow: 0 0 40px 10px rgba($black, 0.05);
+    z-index: 99;
+    @include respond-to(sm){padding: 8px 0;}
+	.logo{
+		float: left;
+		font-size: 0;
+		padding: 3px 0;
+		@include respond-to(sm){padding: 6px 10px;}
+		.logo-svg{
+			fill: $white;
+			width: 100px;
+			height: 40px;
+		}
+		.logo-xs-svg{
+			fill: $white;
+			width: 22px;
+			height: 32px;
+		}
+	}
+	.menu{
+		float: right;
+	    margin: 0 40px;
+		& > li{
+			display: inline-block;
+			vertical-align: middle;
+			.menu-link{
+				position: relative;
+				background-color: transparent;
+				display: block;
+				padding: 15px;
+				text-decoration: none;
+				&:before, &:after{
+					position: absolute;
+					top: 50%;
+					font-family: $medium;
+					font-size: 16px;
+					color: $white;
+					opacity: 0;
+					transition: all 0.2s ease-in-out;
+				}
+				&:before{
+					content:"[";
+					left: 0;
+					transform: translate(15px, -50%);
+				}
+				&:after{
+					content:"]";
+					right: 0;
+					transform: translate(-15px, -50%);
+				}
+				span{
+					position: relative;
+					display: block;
+					font-family: $mont-semi;
+					font-size: 12px;
+					color: $white;
+					height: 15px;
+					padding: 0 5px;
+					overflow: hidden;
+					text-align: center;
+					white-space: nowrap;
+					text-transform: uppercase;
+					&:before, &:after{
+						content: attr(data-hover);
+						display: block;
+						width: 100%;
+						transition: all 0.2s ease-in-out;
+					}
+					&:after{
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						font-family: $mont-bold;
+						transform: translate(-50%, 60%);
+					}
+				}
+				&:hover{
+					&:before{
+						opacity: 1;
+						transform: translate(0, -50%);
+					}
+					&:after{
+						opacity: 1;
+						transform: translate(0, -50%);
+					}
+					span{
+						&:before{
+							transform: translate(0, -100%);
+						}
+						&:after{
+							transform: translate(-50%, -50%);
+						}
+					}
+				}
+			}
+		}
+		.dropdown{
+			.dropdown-menu{
+				display: block;
+				padding: 0;
+				margin: 0;
+				border: 0;
+				opacity: 0;
+				visibility: hidden;
+				overflow: hidden;
+				transform: translate(0, -50px) scale(0.5);
+				transition: all 0.2s ease-in-out;
+				li{
+					a, button{
+						display: block;
+						font-size: 13px;
+						color: $blue;
+						width: 100%;
+						padding: 15px;
+						text-transform: uppercase;
+						&:hover{
+							background-color: $blue;
+							color: $white;
+						}
+					}
+				}
+			}
+			&.open{
+				.dropdown-menu{
+					opacity: 1;
+					visibility: visible;
+					transform: translate(0, 0) scale(1);
+				}
+			}
+		}
+	}
+	.login-btn{
+		background-color: $lt_blue;
+		float: right;
+		color: $white;
+	    padding: 10px 50px;
+	    margin: 3px 0;
+	    overflow: hidden;
+	    box-shadow: -5px 10px 30px 0 rgba($black, 0.07);
+	    @include respond-to(sm){padding: 10px 15px;}
+	    span{
+			font-family: $mont-semi;
+	    }
+	    i{
+			font-size: 20px;
+	    }
+	}
+}

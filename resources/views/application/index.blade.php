@@ -70,9 +70,6 @@
 									<span>Upload</span>
 								</span>
 							</label>
-							@foreach($errors->file as $err)
-								<span>REEE {{ $err }}</span>
-							@endforeach
 						</div>
 						<div class="add-btn-wrap">
 							<button id="add-file" class="btn add-btn" type="button">

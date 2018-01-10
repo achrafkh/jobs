@@ -11,7 +11,7 @@
 <h3>Sites : </h3>
 @if(count($data['site']))
 @foreach($data['site'] as $site)
--{{  $site }}
+-{{  $site }} <br>
 @endforeach
 @endif
 @endif

@@ -33,7 +33,7 @@ class ValidFormRequest extends FormRequest
         ];
         if ($this->has('file')) {
             foreach ($this->file as $i => $f) {
-                $arrayV['file'][$i] = 'required';
+                $arrayV['file'][$i] = 'max:5120|required';
             }
         } else {
             $arrayV['file'][0] = 'required';

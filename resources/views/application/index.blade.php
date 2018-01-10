@@ -5,6 +5,7 @@
 		border : 1px solid red !important;
 	}
 </style>
+@if($errors->has('file')) <?php dd($errors->all())?> error  @endif
 <div class="application-inner">
 	@include('application.partials.page_header',[ 'type' => $type ])
 	<form id="application" class="application-form" method="POST" action="/application/submit/{{ $type }}" enctype="multipart/form-data">
@@ -61,7 +62,7 @@
 					<div class="files">
 						<h3>CV</h3>
 						<div class="files-wrap">
-							<label class="file-upload @if($errors->has('file')) error  @endif" for="file-1">
+							<label class="file-upload @if($errors->has('file'))  error  @endif" for="file-1">
 								<input id="file-1" name="file[]" type="file" >
 								<span class="file-name">Click to browse file</span>
 								<span class="file-btn">
@@ -69,6 +70,9 @@
 									<span>Upload</span>
 								</span>
 							</label>
+							@foreach($errors->file as $err)
+								<span>REEE {{ $err }}</span>
+							@endforeach
 						</div>
 						<div class="add-btn-wrap">
 							<button id="add-file" class="btn add-btn" type="button">

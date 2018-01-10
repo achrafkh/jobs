@@ -5,7 +5,6 @@
 		border : 1px solid red !important;
 	}
 </style>
-@if($errors->has('file')) <?php dd($errors->all())?> error  @endif
 <div class="application-inner">
 	@include('application.partials.page_header',[ 'type' => $type ])
 	<form id="application" class="application-form" method="POST" action="/application/submit/{{ $type }}" enctype="multipart/form-data">

@@ -9,13 +9,11 @@
 @if(isset($data['site']))
 <br>
 <h3>Sites : </h3>
-	@if(count($data['site']))
-<ul class="list-group">
-	@foreach($data['site'] as $site)
-  	<li class="list-group-item">Site : {{  $site }} </li>
-  	@endforeach
-</ul>
-	@endif
+@if(count($data['site']))
+@foreach($data['site'] as $site)
+-{{  $site }}
+@endforeach
+@endif
 @endif
 <h3>Date : </h3><p>{{ Carbon\Carbon::now() }} </p>
 <br>

@@ -63,8 +63,11 @@ class MainController extends Controller
         Mail::to(explode(',', env('REC')))
             ->queue(new InformMail($data));
 
-        Mail::to($request->email)
-            ->later(Carbon::now()->addMinutes(30), new SendTest($data));
+        $mailing = ['Senior Web Developer', 'Junior Web Developer'];
+        if (in_array($request->post, $mailing)) {
+            Mail::to($request->email)
+                ->later(Carbon::now()->addMinutes(30), new SendTest($data));
+        }
 
         Session::flash('msg', ['class' => 'success', 'msg' => 'Application Sent successfully']);
 

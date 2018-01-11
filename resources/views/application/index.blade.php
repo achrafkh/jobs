@@ -102,10 +102,27 @@
 			</div>
 		</div>
 		<div class="application-sub-wrap" id="wrapp">
-			<button disabled="" id="submit" type="submit" class="btn lg-btn white-shadow application-sub" waves-hover>
+			<button disabled="" id="submit" type="button" class="btn lg-btn white-shadow application-sub" waves-hover>
 			Submit Application
 			</button>
+			<button type="submit" style="display:none" id="hiddenSub"></button>
 		</div>
 	</form>
 </div>
+@endsection
+
+
+@section('js')
+<script type="text/javascript">
+$('#submit').click(function(event){
+	var newUser = sessionStorage.getItem('newUser');
+	if(newUser == null || newUser != true){
+		fbq('trackCustom', 'SubmitClick');
+		sessionStorage.setItem('newUser',true);
+	}
+	$('#hiddenSub').click();
+});
+
+
+</script>
 @endsection

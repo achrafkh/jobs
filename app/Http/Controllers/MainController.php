@@ -61,7 +61,7 @@ class MainController extends Controller
         Mail::to(explode(',', env('REC')))
             ->queue(new InformMail($data));
         Session::flash('msg', ['class' => 'success', 'msg' => 'Application Sent successfully']);
-        return redirect('/');
+        return redirect('/#success');
     }
 
     public function submit(Request $request)

@@ -6,7 +6,7 @@
 		@foreach(config('details')[$type]['jobs'] as $index => $value )
 		<div class="col-md-4 col-sm-4 p-h-10">
 			<div class="radiobox">
-				<input id="post-{{$index}}" name="post" type="radio" value="DA Senior" data-collapse="job-specs-{{$index}}">
+				<input id="post-{{$index}}" name="post" type="radio" value="{{ $value['title'] }}" data-collapse="job-specs-{{$index}}">
 				<label for="post-{{$index}}">{{ $value['title'] }}</label>
 			</div>
 		</div>

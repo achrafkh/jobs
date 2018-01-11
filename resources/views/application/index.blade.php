@@ -116,7 +116,7 @@
 <script type="text/javascript">
 $('#submit').click(function(event){
 	var newUser = sessionStorage.getItem('newUser');
-	if(newUser == null || newUser != true){
+	if(newUser == null || newUser != "true"){
 		fbq('trackCustom', 'SubmitClick');
 		sessionStorage.setItem('newUser',true);
 	}

@@ -1,11 +1,11 @@
 @extends('layouts.master')
 @section('content')
-<style type="text/css">
+<!-- <style type="text/css">
 	.error{
 		border : 1px solid red !important;
 	}
-</style>
-<div class="application-inner">
+</style> -->
+<div class="application-inner" id="apInner">
 	@include('application.partials.page_header',[ 'type' => $type ])
 	<form id="application" class="application-form" method="POST" action="/application/submit/{{ $type }}" enctype="multipart/form-data">
 		@include('application.partials.job_post',[ 'type' => $type ])
@@ -62,7 +62,7 @@
 						<h3>Resumé</h3>
 						<div class="files-wrap">
 							<label class="file-upload @if($errors->has('file'))  error  @endif" for="file-1">
-								<input id="file-1" name="file[]" type="file" >
+								<input class="file" id="file-1" name="file[]" type="file" >
 								<span class="file-name">Parcourir</span>
 								<span class="file-btn">
 									<i class="ico-upload"></i>
@@ -102,7 +102,7 @@
 			</div>
 		</div>
 		<div class="application-sub-wrap" id="wrapp">
-			<button disabled="" id="submit" type="button" class="btn lg-btn white-shadow application-sub" waves-hover>
+			<button  id="submit" type="button" class="btn lg-btn white-shadow application-sub" waves-hover>
 			Submit Application
 			</button>
 			<button type="submit" style="display:none" id="hiddenSub"></button>
@@ -115,6 +115,20 @@
 @section('js')
 <script type="text/javascript">
 $('#submit').click(function(event){
+	var postInput = $("input[name='post']:checked").val();
+
+	if(postInput == '' || postInput == undefined){
+		toastr.error('Vous devez choisir un poste.', 'Oops!');
+
+	    $('html, body').animate({
+	        scrollTop: $("#apInner").offset().top
+	    }, 1000);
+		return false;
+	}
+	if($(".file").eq(0).val() == ''){
+		toastr.error('Le CV est requis.', 'Oops!');
+		return false;
+	}
 	var newUser = sessionStorage.getItem('newUser');
 	if(newUser == null || newUser != "true"){
 		fbq('trackCustom', 'SubmitClick');

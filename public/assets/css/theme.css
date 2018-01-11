@@ -9036,6 +9036,12 @@ Inputs
 	color: #ababab;
 }
 
+.input-wrap input.form-control.error,
+.input-wrap textarea.form-control.error,
+.input-wrap .bootstrap-select .dropdown-toggle.error {
+	border: 1px solid #f6695e;
+}
+
 .input-wrap textarea.form-control {
 	height: auto;
 	resize: none;
@@ -9054,6 +9060,10 @@ Inputs
 	font-family: "roboto-medium";
 	font-size: 14px;
 	color: #626262;
+}
+
+.input-wrap .bootstrap-select .dropdown-toggle.error {
+	border: 1px solid #f6695e;
 }
 
 .input-wrap .input-icon {
@@ -9119,6 +9129,10 @@ Radio Box
 	-webkit-box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
 	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.radiobox.error label {
+	border: 1px solid #f6695e !important;
 }
 
 /*
@@ -9190,6 +9204,10 @@ File Upload
 
 .file-upload .file-btn i {
 	font-size: 18px;
+}
+
+.file-upload.error {
+	border: 1px solid #f6695e;
 }
 
 /*
@@ -9321,6 +9339,50 @@ Application
 
 .job-post .form-cap {
 	text-align: center;
+}
+
+.job-post .posts-wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+
+.job-post .posts-wrap .post {
+	-webkit-flex-basis: 33.33%;
+	-ms-flex-preferred-size: 33.33%;
+	flex-basis: 33.33%;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
+.job-post .posts-wrap .post .radiobox {
+	height: 100%;
+	margin: 0;
+}
+
+.job-post .posts-wrap .post .radiobox label {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 100%;
 }
 
 .job-post .job-specs .well {
@@ -11299,6 +11361,12 @@ td.visible-lg {
 	padding: 0 15px 30px;
 }
 
+.job-post .posts-wrap .post {
+	-webkit-flex-basis: 50%;
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+}
+
 .application-sub-wrap {
 	margin: 30px 0 20px;
 }
@@ -11515,6 +11583,16 @@ td.visible-xs {
 
 .hidden-xs {
 	display: none !important;
+}
+
+}
+
+@media (max-width: 600px) {
+
+.job-post .posts-wrap .post {
+	-webkit-flex-basis: 100%;
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
 }
 
 }

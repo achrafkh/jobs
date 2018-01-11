@@ -119,7 +119,9 @@ $(document).ready(function() {
 	    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
        
         if(fileValidation($(this).attr('id'))){
-				$(this).siblings('.file-name').html(label).addClass('active');
+			$(this).siblings('.file-name').html(label).addClass('active');
+		} else {
+			toastr.error("L'extension de fichier doit être word ou pdf", 'Oops!');
 		}
 	});
 
@@ -158,5 +160,4 @@ $(document).ready(function() {
 	})
 
 });
-
 

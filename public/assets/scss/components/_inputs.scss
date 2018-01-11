@@ -25,6 +25,9 @@ Inputs
 		border-radius: 3px;
 		box-shadow: none;
 		@include placeholder(){color: $grey}
+		&.error{
+			border: 1px solid $red;
+		}
 	}
 	textarea.form-control{
 		height: auto;
@@ -39,6 +42,9 @@ Inputs
 				font-family: $medium;
 				font-size: 14px;
 				color: $dk_grey;
+			}
+			&.error{
+				border: 1px solid $red;
 			}
 		}
 	}
@@ -91,6 +97,11 @@ Radio Box
 			box-shadow: 0 10px 25px 0 rgba($black, 0.2);
 		}
 	}
+	&.error{
+		label{
+			border: 1px solid $red !important;
+		}
+	}
 }
 
 /*
@@ -139,5 +150,8 @@ File Upload
 		i{
 			font-size: 18px;
 		}
+	}
+	&.error{
+		border: 1px solid $red;
 	}
 }

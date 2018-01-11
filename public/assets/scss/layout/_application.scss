@@ -53,6 +53,28 @@ Application
 	.form-cap{
 		text-align: center;
 	}
+	.posts-wrap{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+		.post{
+			flex-basis: 33.33%;
+			padding: 0 10px;
+			margin-bottom: 20px;
+			@include respond-to(ms){flex-basis: 50%;}
+			@include respond-to(xs){flex-basis: 100%;}
+			.radiobox{
+				height: 100%;
+				margin: 0;
+				label{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					height: 100%;
+				}
+			}
+		}
+	}
 	.job-specs{
 		.well{
 			background-color: transparent;

@@ -9,7 +9,14 @@
     <link rel="icon" type="image/png" href="https://www.kpeiz.digital/assets/images/favicons/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="https://www.kpeiz.digital/assets/images/favicons/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="https://www.kpeiz.digital/assets/images/favicons/favicon-16x16.png" sizes="16x16">
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="/assets/css/theme.min.css">
+    <style type="text/css">
+        .toast-bottom-right{
+            margin-bottom: 50px
+        }
+    </style>
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -31,6 +38,27 @@
 
     <script src="/assets/js/vendors.min.js"></script>
     <script src="/assets/js/theme.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript">
+    toastr.options = {
+      "closeButton": true,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": true,
+      "positionClass": "toast-bottom-right",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "1000",
+      "timeOut": "10000",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
+
+    </script>
     @yield('js')
 </body>
 </html>

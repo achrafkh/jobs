@@ -1,24 +1,24 @@
-<div class="job-post">
+<div class="job-post" >
 	<div class="form-cap">
 		<h2>Choisir un poste</h2>
 	</div>
-	<div class="row nm-10">
+	<div class="posts-wrap" >
 		@foreach(config('details')[$type]['jobs'] as $index => $value )
-		<div class="col-md-4 col-sm-4 p-h-10">
+		<div class="post">
 			<div class="radiobox">
 				<input id="post-{{$index}}" name="post" type="radio" value="{{ $value['title'] }}" data-collapse="job-specs-{{$index}}">
 				<label for="post-{{$index}}">{{ $value['title'] }}</label>
 			</div>
 		</div>
 		@endforeach
-		<div class="col-md-12">
-			@foreach(config('details')[$type]['jobs'] as $index => $value)
-			<div id="job-specs-{{$index}}" class="job-specs panel-collapse collapse" role="tabpanel">
-				<div class="well">
-					{!! $value['desc'] !!}
-				</div>
+	</div>
+	<div class="job-specs-wrap">
+		@foreach(config('details')[$type]['jobs'] as $index => $value)
+		<div id="job-specs-{{$index}}" class="job-specs panel-collapse collapse" role="tabpanel">
+			<div class="well">
+				{!! $value['desc'] !!}
 			</div>
-		@endforeach
 		</div>
+		@endforeach
 	</div>
 </div>

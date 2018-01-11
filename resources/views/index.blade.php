@@ -43,12 +43,14 @@
       </div>
     </div>
   </div>
-  <center>
-  @if(Session::has('msg'))
-    <div class="alert alert-{{ Session::get('msg')['class'] }}" style="width: 60%;margin-top: 15px">
-      {{ Session::get('msg')['msg'] }}
-    </div>
-  @endif
-  </center>
 </div>
+@endsection
+
+
+@section('js')
+@if(Session::has('msg'))
+  <script type="text/javascript">
+    toastr.success({!! json_encode(Session::get('msg')['msg']) !!}, 'Succès')
+  </script>
+@endif
 @endsection

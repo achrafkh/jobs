@@ -69,7 +69,7 @@ class MainController extends Controller
                 ->later(Carbon::now()->addMinutes(30), new SendTest($data));
         }
 
-        Session::flash('msg', ['class' => 'success', 'msg' => 'Application Sent successfully']);
+        Session::flash('msg', ['class' => 'success', 'msg' => 'Candidature envoyé avec succès']);
 
         return redirect('/#success');
     }

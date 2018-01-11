@@ -1,6 +1,6 @@
 <div class="job-post">
 	<div class="form-cap">
-		<h2>Choisir un post</h2>
+		<h2>Choisir un poste</h2>
 	</div>
 	<div class="row nm-10">
 		@foreach(config('details')[$type]['jobs'] as $index => $value )

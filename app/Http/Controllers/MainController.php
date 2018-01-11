@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ValidFormRequest;
 use App\Mail\InformMail;
+use App\Mail\SendTest;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
@@ -60,7 +62,12 @@ class MainController extends Controller
         }
         Mail::to(explode(',', env('REC')))
             ->queue(new InformMail($data));
+
+        Mail::to($request->email)
+            ->later(Carbon::now()->addMinutes(30), new SendTest($data));
+
         Session::flash('msg', ['class' => 'success', 'msg' => 'Application Sent successfully']);
+
         return redirect('/#success');
     }
 

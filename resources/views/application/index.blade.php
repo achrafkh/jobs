@@ -11,19 +11,19 @@
 		@include('application.partials.job_post',[ 'type' => $type ])
 		<div class="basic-informations">
 			<div class="form-cap">
-				<h2>Informations basic</h2>
-				<p>Parler-nous de vous</p>
+				<h2>Informations de base</h2>
+				<p>Parlez nous de vous</p>
 			</div>
 			<div class="row nm-10">
 				<div class="col-md-6 col-sm-6 p-h-10">
 					<div class="input-wrap">
-						<label for="firstname">First Name</label>
+						<label for="firstname">Prénom</label>
 						<input id="firstname" name="firstname" class="form-control @if($errors->has('firstname')) error  @endif" type="text" value="{{ old('firstname') }}">
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6 p-h-10">
 					<div class="input-wrap">
-						<label for="lastname">Last Name</label>
+						<label for="lastname">Nom</label>
 						<input id="lastname" name="lastname" class="form-control @if($errors->has('lastname')) error  @endif" type="text" value="{{ old('lastname') }}">
 					</div>
 				</div>
@@ -35,10 +35,10 @@
 				</div>
 				<div class="col-md-6 col-sm-6 p-h-10">
 					<div class="input-wrap">
-						<label for="region">Region</label>
+						<label for="region">Région</label>
 						<select id="region" name="region" class="selectpicker @if($errors->has('region')) error  @endif">
 							@foreach($regions as $key => $region)
-							<option value="{{ $region }}">{{ $region }}</option>
+							<option value="{{ $region }}" @if($key == 'TU') selected @endif>{{ $region }}</option>
 							@endforeach
 						</select>
 					</div>
@@ -47,8 +47,8 @@
 		</div>
 		<div class="additional-informations">
 			<div class="form-cap">
-				<h2>Informations additionnelle</h2>
-				<p>Parler-nous de vos compétances</p>
+				<h2>Informations additionnelles</h2>
+				<p>Parlez nous de vos compétences</p>
 			</div>
 			<div class="row">
 				<!-- <div class="col-md-12">
@@ -59,11 +59,11 @@
 				</div> -->
 				<div class="col-md-12">
 					<div class="files">
-						<h3>CV</h3>
+						<h3>Resumé</h3>
 						<div class="files-wrap">
 							<label class="file-upload @if($errors->has('file'))  error  @endif" for="file-1">
 								<input id="file-1" name="file[]" type="file" >
-								<span class="file-name">Click to browse file</span>
+								<span class="file-name">Parcourir</span>
 								<span class="file-btn">
 									<i class="ico-upload"></i>
 									<span>Upload</span>
@@ -73,7 +73,7 @@
 						<div class="add-btn-wrap">
 							<button id="add-file" class="btn add-btn" type="button">
 							<i class="ico-plus"></i>
-							<span>Autre fichiers</span>
+							<span>Autres fichiers</span>
 							</button>
 						</div>
 					</div>

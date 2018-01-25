@@ -6,7 +6,7 @@ Bonjour {{ $data['firstname'] .' '. $data['lastname'] }},<br>
 J'ai reçu votre candidature pour le poste de web developer et nous sommes intéressés par votre candidature.
 Vous êtes shortlisté pour passer un test technique qui dure 30mn.
 
-@component('mail::button', ['url' => 'https://goo.gl/V5sW6T'])
+@component('mail::button', ['url' => 'https://goo.gl/forms/pjuNylFVrZ4yEEp43'])
 Commencer le test
 @endcomponent
 

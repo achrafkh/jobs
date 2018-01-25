@@ -15,6 +15,11 @@
 <!-- Open Graph data -->
 
 <meta property="og:title" content="Kpeiz recruit !!" />
+
+<meta property="og:image" content="{{ url('/assets/images/marketer-bg.jpg')}}" />
+
+<meta property="fb:app_id" content="651139668361432" />
+
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ url('/') }}" />
 <meta property="og:description" content="You want to be a part of something big? Apply now and join an expanding team of talented & passionate developers." />

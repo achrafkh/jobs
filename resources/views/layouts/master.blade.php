@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="https://www.kpeiz.digital/assets/images/favicons/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="https://www.kpeiz.digital/assets/images/favicons/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="https://www.kpeiz.digital/assets/images/favicons/favicon-16x16.png" sizes="16x16">
-
+    @include('layouts.meta')
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="/assets/css/theme.min.css">
     <style type="text/css">

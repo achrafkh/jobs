@@ -134,7 +134,7 @@ svg {
       <a href="{{url('/')}}" class="link-button upper">Go to Home Page</a>
     </div>
     <div class="action-link-wrap2" style="display: inline">
-      <a href="https://www.kpeiz.digital/" jp-modal="" class="link-button upper">Contact Us</a>
+      <a href="https://www.kpeiz.digital/#contact" jp-modal="" class="link-button upper">Contact Us</a>
     </div>
   </div>
 </div>

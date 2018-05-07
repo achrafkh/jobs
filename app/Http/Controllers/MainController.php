@@ -46,6 +46,7 @@ class MainController extends Controller
 
     public function handleSubmit(ValidFormRequest $request)
     {
+
         foreach ($request->file('file') as $file) {
             $data['files'][] = storage_path(uploadFile($file));
         }

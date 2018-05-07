@@ -3,14 +3,19 @@
 # Candidature Kpeiz
 
 Bonjour {{ $data['firstname'] .' '. $data['lastname'] }},<br>
-J'ai reçu votre candidature pour le poste de web developer et nous sommes intéressés par votre candidature.
-Vous êtes shortlisté pour passer un test technique qui dure 30mn.
 
-@component('mail::button', ['url' => 'https://goo.gl/forms/pjuNylFVrZ4yEEp43'])
-Commencer le test
-@endcomponent
+Nous avons bien reçu votre candidature pour le poste de développeur web chez Kpeiz.
 
-On vous demande pas de répondre a toutes les questions, on comprends qu'un développeur web est en formation continue et qu'il peut s'améliorer merci de ne pas tricher ça va vous faire perdre votre temps et le notre.
+Votre profil a retenu notre attention. A cet effet, nous vous proposons de passer ce test afin de mieux cerner vos compétences techniques.
+
+Vous étes menés à crée une base de donnée  depuis  cet ensemble de données “https://www.kaggle.com/datasnaek/youtube/data”, et Générer un rapport présentant des graphiques et des analyses à partir de ces informations.
+NB : Télécharger uniquement les fichiers  Gbcomments.csv, GBvideos.csv
+
+Vous allez étre jugé sur votre conception et la qualité du rapport que vous allez présenter.
+
+Une fois le challenge relevé , veuillez envoyer un fichier ZIP contenant les fichiers SQL et le code utilisé à cet e-mail.
+
+Merci de vous référer à vos propres compétences. Nous sommes conscients qu’un développeur est en apprentissage continu. Votre raisonnement peut s’avérer plus important que le résultat en soi.
 
 Merci,<br>
 {{ config('app.name') }}

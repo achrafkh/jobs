@@ -130,7 +130,7 @@ return [
                         <li>-Fortes connaissances : mysql / javascript / Html & css</li>
                         <li>-Fortes connaissances du framework Laravel</li>
                         <li>-Une expérience de 3 ans ou plus est souhaitable.</li>
-                        <li>-Ayant la capacité d'une equipe technique.</li>
+                        <li>-Ayant la capacité de gérer une équipe.</li>
                     </ul>
                     ",
             ],

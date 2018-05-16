@@ -46,7 +46,6 @@ class MainController extends Controller
 
     public function handleSubmit(ValidFormRequest $request)
     {
-
         foreach ($request->file('file') as $file) {
             $data['files'][] = storage_path(uploadFile($file));
         }
@@ -55,6 +54,10 @@ class MainController extends Controller
         $data['lastname'] = $request->lastname;
         $data['email'] = $request->email;
         $data['region'] = $request->region;
+
+        $data['salery'] = $request->salery;
+        $data['disp'] = $request->disp;
+
         $data['message'] = $request->message;
         if ($request->has('site')) {
             foreach ($request->site as $site) {

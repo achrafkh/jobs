@@ -121,7 +121,7 @@ return [
         'color' => 'cyon',
         'jobs' => [
             0 => [
-                'title' => 'Senior Web Developer',
+                'title' => 'Chef de projet',
                 'desc' => "Notre équipe recherche un(e) Développeur Senior pour accélérer son développement en Tunisie et à l’international, et prendre en charge l’amélioration et la valorisation de nos produits.
                     <br><br>
                     <h1><strong>Exigences :</strong></h1><br>
@@ -135,14 +135,44 @@ return [
                     ",
             ],
             1 => [
-                'title' => 'Junior Web Developer',
-                'desc' => "Notre équipe recherche un(e) Développeur Junior.
+                'title' => 'Developeur Web',
+                'desc' => "
+
+
+                <strong>KPEIZ</strong> est une suite de modules Social Media Analytics d’aide à la décision. Notre mission est d’apporter aux community managers et aux marketeurs les meilleurs outils pour améliorer efficacement leur stratégie digitale sur tous les principaux réseaux sociaux! <br><br>
+                Leader du secteur au MENA et en Afrique, Kpeiz compte parmi ses clients des multinationales et de grandes sociétés dans différents pays. <br><br>
+                Afin d’accélérer son développement à l’échelle nationale et internationale, et pour renforcer l’équipe technique, nous  recherchons un(e) Développeur / Intégrateur web PHP/MySql.
+
                     <br><br>
-                     <h1><strong>Exigences :</strong></h1><br>
+                    <h1><strong>Mission :</strong></h1><br>
+                    Vous serez ramener avec une équipe de jeunes geeks à développer une plateforme permettant d’automatiser les tâches répétitives des communtiy managers (Moderation, Reporting..) et offrir une veille concurrentielle à portée de la main.
+                     <br><br>
                     <ul>
-                        <li>-Fortes connaissances du langage PHP</li>
-                        <li>-Fortes connaissances : mysql / javascript / Html & css</li>
-                        <li>-connaissances du framework Laravel est un plus</li>
+                        <li>- Analyser les réseaux sociaux.</li>
+                        <li>- Générer des rapports.</li>
+                        <li>- Avoir une veille sectorielle.</li>
+                        <li>- Dresser le bilan de compétences de l’équipe social media et orienter la stratégie grâce à l’analyse des données fiables et précises.</li>
+                    </ul>
+                    <br><br>
+                    <h1><strong>Exigences :</strong></h1><br>
+                    <ul>
+                        <li>- Connaissances du framework Laravel.</li>
+                        <li>- Ingénieur ou autodidacte, c'est pas le diplôme qui compte.</li>
+                        <li>- Capacité d'écrire du code propre, réutilisable et bien documenté.</li>
+                        <li>- Expérience avec les bibliothèques et API tierces.</li>
+                        <li>- Compétences requises: PHP, MySQL, JQuery, JavaScript.</li>
+                        <li>- Expérience avec le développement des APIs REST.</li>
+                        <li>- Capacité d’administration de serveurs (Ubuntu).</li>
+                    </ul>
+
+                    <br><br>
+                    <h1><strong>Avantages :</strong></h1><br>
+                    <ul>
+                        <li>- Ambiance jeune et décontractée.</li>
+                        <li>- Salaires Compétitifs.</li>
+                        <li>- Horaires flexibles.</li>
+                        <li>- Perspective d’évolution importante.</li>
+                        <li>- Local convivial et favorable au travail.</li>
                     </ul>
                     ",
             ],

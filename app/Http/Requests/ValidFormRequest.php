@@ -31,6 +31,11 @@ class ValidFormRequest extends FormRequest
             //'message' => 'required',
             'post' => 'required',
         ];
+
+        if ('developer' == $this->type) {
+            $arrayV['salery'] = 'required';
+            $arrayV['disp'] = 'required';
+        }
         if ($this->has('file')) {
             foreach ($this->file as $i => $f) {
                 $arrayV['file'][$i] = 'max:10240';

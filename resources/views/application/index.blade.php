@@ -14,6 +14,9 @@
 				<h2>Informations de base</h2>
 				<p>Parlez nous de vous</p>
 			</div>
+
+			<input type="hidden" name="type" value="{{ $type }}">
+
 			<div class="row nm-10">
 				<div class="col-md-6 col-sm-6 p-h-10">
 					<div class="input-wrap">
@@ -43,6 +46,29 @@
 						</select>
 					</div>
 				</div>
+
+				@if($type == 'developer')
+				<div class="col-md-6 col-sm-6 p-h-10">
+					<div class="input-wrap">
+						<label for="salery">Prétentions salariale</label>
+						<input id="salery" name="salery" class="form-control @if($errors->has('salery')) error  @endif" type="text" value="{{ old('salery') }}">
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 p-h-10">
+					<div class="input-wrap">
+						<label for="disp">Disponibilité</label>
+						<select id="disp" name="disp" class="selectpicker @if($errors->has('disp')) error  @endif">
+							<option value="immediate">immédiate</option>
+							<option value="1week">Dans une semaine</option>
+							<option value="2week">Dans deux semaine</option>
+							<option value="1month">Dans trois semaine</option>
+						</select>
+					</div>
+				</div>
+				@endif
+
+
+
 			</div>
 		</div>
 		<div class="additional-informations">

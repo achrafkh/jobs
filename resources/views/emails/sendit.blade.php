@@ -5,6 +5,8 @@
   <li class="list-group-item">Nom : {{ $data['firstname'] .' '. $data['lastname'] }}</li>
   <li class="list-group-item">Email : {{ $data['email'] }}</li>
   <li class="list-group-item">Region : {{ $data['region'] }}</li>
+  <li class="list-group-item">Salaire : {{ $data['salery'] or '' }}</li>
+  <li class="list-group-item">Disponibilité : {{ $data['disp'] or '' }}</li>
 </ul>
 @if(isset($data['site']))
 <br>

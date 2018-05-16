@@ -17,6 +17,9 @@ Une fois le challenge relevé , veuillez envoyer un fichier ZIP contenant les fi
 
 Merci de vous référer à vos propres compétences. Nous sommes conscients qu’un développeur est en apprentissage continu. Votre raisonnement peut s’avérer plus important que le résultat en soi.
 
+Vous êtes également invité à nous rejoindre pour une journée ouverte de recrutement au sein de nos locaux le samedi 19 Mai à partir de 9h
+veuillez confirmer votre présence en répondant à cet email.
+
 Merci,<br>
 {{ config('app.name') }}
 @endcomponent

@@ -64,7 +64,8 @@ class MainController extends Controller
                 $data['site'][] = $site;
             }
         }
-        Mail::to(explode(',', env('REC')))
+
+        Mail::to(['contact@kpeiz.digital', 'kais.ezzine+job@gmail.com', 'achraf@kpeiz.digital'])
             ->queue(new InformMail($data));
 
         $mailing = ['Senior Web Developer', 'Junior Web Developer'];

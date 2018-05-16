@@ -68,7 +68,7 @@ class MainController extends Controller
         Mail::to(['contact@kpeiz.digital', 'kais.ezzine+job@gmail.com', 'achraf@kpeiz.digital'])
             ->queue(new InformMail($data));
 
-        $mailing = ['Senior Web Developer', 'Junior Web Developer'];
+        $mailing = ['Developeur Web'];
         if (in_array($request->post, $mailing)) {
             Mail::to($request->email)
                 ->later(Carbon::now()->addMinutes(30), new SendTest($data));

@@ -51,9 +51,9 @@ class Handler extends ExceptionHandler
 
         // Custom error 500 view on production
 
-        if (env('APP_DEBUG') == false) {
-            return response()->view('errors.500', [], 500);
-        }
+        // if (env('APP_DEBUG') == false) {
+        //     return response()->view('errors.500', [], 500);
+        // }
         return parent::render($request, $exception);
     }
 }
